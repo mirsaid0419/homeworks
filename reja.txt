@@ -1,0 +1,13 @@
+// clients
+GET /clients
+POST /clients
+GET /clients/:id
+
+// foods
+GET /foods
+POST /foods
+
+// orders
+GET /orders/:clientId
+POST /orders
+DELETE /orders/:id

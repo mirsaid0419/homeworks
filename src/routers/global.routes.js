@@ -1,8 +1,11 @@
 import { Router } from "express";
-import clientRouter from "../routers/client.routes.js"
+import clientRouter from "../routers/client.routes.js";
 import FoodRouter from "../routers/food.routes.js";
+import OrderRouter from "../routers/order.routes.js";
 const router = Router();
-router.use("/client", clientRouter).use("/food", FoodRouter);
-// .use("/order",orderRouter)
+router
+  .use("/client", clientRouter)
+  .use("/food", FoodRouter)
+  .use("/order", OrderRouter);
 
 export default router;

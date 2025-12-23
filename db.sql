@@ -149,7 +149,8 @@ SELECT cs.full_name,o.order_data from orders o JOIN customers cs on o.customer_i
 -- 3.6
 SELECT cs.full_name from customers cs JOIN orders o on cs.id=o.customer_id;
 
--- 3.7
+-- 3.7 oxirigacha yetmagan 
+
 SELECT o.id as order_id, SUM(oi.quantity) from order_items oi 
 JOIN orders o on oi.order_id=o.id 
 GROUP BY o.id ;
